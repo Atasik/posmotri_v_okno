@@ -248,7 +248,7 @@ ol {
 .content__list {
   position: relative;
   max-height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content__list::-webkit-scrollbar {
