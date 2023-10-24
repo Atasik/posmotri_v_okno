@@ -103,6 +103,11 @@ ol {
   width: fit-content;
 }
 
+.search-form__label-text:focus,
+.search-form__textfield:focus{
+  outline: none;
+}
+
 .search-form__label:has(:focus-visible){
   outline: 1px solid currentColor;
   outline-offset: 1px;
@@ -126,13 +131,11 @@ ol {
 
 .search-form__textfield {
   width: 225px;
-  height: 27px;
   border: none;
   border-top: 1px solid currentColor;
   border-bottom: 1px solid currentColor;
-  padding-top: 1.5px;
   color: #FFF;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -244,7 +247,7 @@ ol {
 
 .content__list {
   position: relative;
-  max-height: 300px;
+  max-height: 298px;
   overflow-y: scroll;
 }
 
@@ -313,11 +316,11 @@ ol {
 
 .content__video-card-description {
   color: #FFF;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  line-height: 16.2px;
+  line-height: 90%;
 }
 
 .content__video-card-thumbnail {
